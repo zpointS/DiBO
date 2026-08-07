@@ -129,10 +129,10 @@ are available on Hugging Face:
 
 | Task | Model repository | Release |
 |---|---|---|
-| `TFBind8-Exact-v0` | [DiBO-TFBind8](https://huggingface.co/zpointsun/DiBO-TFBind8) | [`v1.1.5`](https://huggingface.co/zpointsun/DiBO-TFBind8/tree/v1.1.5) |
-| `TFBind10-Exact-v0` | [DiBO-TFBind10](https://huggingface.co/zpointsun/DiBO-TFBind10) | [`v1.1.5`](https://huggingface.co/zpointsun/DiBO-TFBind10/tree/v1.1.5) |
-| `AntMorphology-Exact-v0` | [DiBO-AntMorphology](https://huggingface.co/zpointsun/DiBO-AntMorphology) | [`v1.0.5`](https://huggingface.co/zpointsun/DiBO-AntMorphology/tree/v1.0.5) |
-| `DKittyMorphology-Exact-v0` | [DiBO-DKittyMorphology](https://huggingface.co/zpointsun/DiBO-DKittyMorphology) | [`v1.0.5`](https://huggingface.co/zpointsun/DiBO-DKittyMorphology/tree/v1.0.5) |
+| `TFBind8-Exact-v0` | [DiBO-TFBind8](https://huggingface.co/zpointsun/DiBO-TFBind8) | [`v1.1.6`](https://huggingface.co/zpointsun/DiBO-TFBind8/tree/v1.1.6) |
+| `TFBind10-Exact-v0` | [DiBO-TFBind10](https://huggingface.co/zpointsun/DiBO-TFBind10) | [`v1.1.6`](https://huggingface.co/zpointsun/DiBO-TFBind10/tree/v1.1.6) |
+| `AntMorphology-Exact-v0` | [DiBO-AntMorphology](https://huggingface.co/zpointsun/DiBO-AntMorphology) | [`v1.0.6`](https://huggingface.co/zpointsun/DiBO-AntMorphology/tree/v1.0.6) |
+| `DKittyMorphology-Exact-v0` | [DiBO-DKittyMorphology](https://huggingface.co/zpointsun/DiBO-DKittyMorphology) | [`v1.0.6`](https://huggingface.co/zpointsun/DiBO-DKittyMorphology/tree/v1.0.6) |
 
 Each repository provides the same final task-specific model in two formats:
 
@@ -205,7 +205,7 @@ export directly:
 python eval.py \
   --tasks TFBind8-Exact-v0 \
   --model_name_or_path zpointsun/DiBO-TFBind8 \
-  --model_revision v1.1.5 \
+  --model_revision v1.1.6 \
   --seeds <SEEDS> \
   --num_candidates 128 \
   --max_attempts 1000 \
@@ -218,7 +218,7 @@ existing `--checkpoint_path` interface:
 
 ```bash
 hf download zpointsun/DiBO-TFBind8 dibo_tfbind8_final.pt \
-  --revision v1.1.5 --local-dir checkpoints/dibo-tfbind8
+  --revision v1.1.6 --local-dir checkpoints/dibo-tfbind8
 ```
 
 ```bash
@@ -238,7 +238,7 @@ For Ant, install the oracle environment first and use the same interface:
 python eval.py \
   --tasks AntMorphology-Exact-v0 \
   --model_name_or_path zpointsun/DiBO-AntMorphology \
-  --model_revision v1.0.5 \
+  --model_revision v1.0.6 \
   --seeds <SEEDS> \
   --num_candidates 128 \
   --max_attempts 1000 \
