@@ -1,0 +1,33 @@
+{
+  "base_model": "GSAI-ML/LLaDA-8B-Instruct",
+  "base_model_revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "delimiter_tokens": [
+    "|design-start|",
+    "|design-end|",
+    "|label-start|",
+    "|label-end|"
+  ],
+  "auto_class": "AutoModel",
+  "tasks": {
+    "TFBind8-Exact-v0": {
+      "repository_id": "zpointsun/DiBO-TFBind8",
+      "artifact_name": "DiBO-TFBind8",
+      "original_checkpoint_filename": "dibo_tfbind8_final.pt"
+    },
+    "TFBind10-Exact-v0": {
+      "repository_id": "zpointsun/DiBO-TFBind10",
+      "artifact_name": "DiBO-TFBind10",
+      "original_checkpoint_filename": "dibo_tfbind10_final.pt"
+    },
+    "AntMorphology-Exact-v0": {
+      "repository_id": "zpointsun/DiBO-AntMorphology",
+      "artifact_name": "DiBO-AntMorphology",
+      "original_checkpoint_filename": "dibo_ant_morphology_final.pt"
+    },
+    "DKittyMorphology-Exact-v0": {
+      "repository_id": "zpointsun/DiBO-DKittyMorphology",
+      "artifact_name": "DiBO-DKittyMorphology",
+      "original_checkpoint_filename": "dibo_dkitty_morphology_final.pt"
+    }
+  }
+}

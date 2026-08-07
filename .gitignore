@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+
+outputs/
+checkpoints/
+wandb/
+logs/
+log/
+*.out
+*.err
+
+.cache/
+.hf_cache/
+hf_cache/
+*.safetensors
+*.bin
+*.pt
+/data/design_bench_data.zip
+
+# Local, untracked Hugging Face artifact staging.
+.release/huggingface/
+
+agent_runs/*/runtime/

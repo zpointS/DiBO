@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you find this work helpful, please cite the paper below."
+title: "Training Diffusion Language Models for Black-Box Optimization"
+type: software
+authors:
+  - family-names: Sun
+    given-names: Zipeng
+  - family-names: Chen
+    given-names: Can
+  - family-names: Yuan
+    given-names: Ye
+  - family-names: Wu
+    given-names: Haolun
+  - family-names: Gu
+    given-names: Jiayao
+  - family-names: Pal
+    given-names: Christopher
+  - family-names: Liu
+    given-names: Xue
+repository-code: "https://github.com/zpointS/DiBO"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Training Diffusion Language Models for Black-Box Optimization"
+  authors:
+    - family-names: Sun
+      given-names: Zipeng
+    - family-names: Chen
+      given-names: Can
+    - family-names: Yuan
+      given-names: Ye
+    - family-names: Wu
+      given-names: Haolun
+    - family-names: Gu
+      given-names: Jiayao
+    - family-names: Pal
+      given-names: Christopher
+    - family-names: Liu
+      given-names: Xue
+  journal: "arXiv preprint arXiv:2603.17919"
+  year: 2026
+  doi: "10.48550/arXiv.2603.17919"
+  url: "https://arxiv.org/abs/2603.17919"

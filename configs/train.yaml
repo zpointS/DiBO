@@ -1,0 +1,52 @@
+special_tokens:
+  MASK_TOKEN_ID: 126336
+  DESIGN_START: "|design-start|"
+  DESIGN_END: "|design-end|"
+  LABEL_START: "|label-start|"
+  LABEL_END: "|label-end|"
+
+basic:
+  seed: null
+  device: "cuda:0"
+  use_bf16: true
+  use_kv_cache: false
+
+model:
+  name_or_path: "GSAI-ML/LLaDA-8B-Instruct"
+
+path:
+  bundle_dir: "data/task_bundles"
+  prompts_dir: "data/prompts"
+  output_dir: "outputs/checkpoints"
+  reward_stats_json: "data/reward_stats/reward_stats.json"
+
+ckpt_path: ""
+extra_name: "dibo"
+
+train:
+  mode: "sft"
+  reward_center: false
+  max_opt_steps: 2048
+  log_every_steps: 16
+  eval_every_steps: 16
+  save_every_steps: 128
+  batch_size: 1
+  grad_accum_steps: 16
+  lr: 1e-5
+  warmup_steps: 100
+  warmup_ratio: null
+  lr_schedule: "warmup_constant"
+  max_grad_norm: 1.0
+  optimizer_name: "pagedadamw8bit"
+  gradient_checkpointing: true
+  special_token_type: "special"
+  ablation_use_random_neighbors: "d1-d2"
+  ablation_use_high_or_low_pool: "evenly"
+  num_workers: 0
+
+wandb:
+  use_wandb: true
+  project: "DiBO"
+  name: null
+  wandb_dir: "outputs/wandb"
+  wandb_mode: "offline"

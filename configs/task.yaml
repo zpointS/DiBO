@@ -1,0 +1,45 @@
+path:
+  bundle_dir: "data/task_bundles"
+  prompts_dir: "data/prompts"
+
+task_names:
+  - "TFBind8-Exact-v0"
+  - "TFBind10-Exact-v0"
+  - "AntMorphology-Exact-v0"
+  - "DKittyMorphology-Exact-v0"
+
+use:
+  TFBind8-Exact-v0: true
+  TFBind10-Exact-v0: false
+  AntMorphology-Exact-v0: false
+  DKittyMorphology-Exact-v0: false
+
+mix:
+  mode: "random_uniform"
+  weights: null
+  fixed_order: null
+  rr_shuffle_tasks: false
+
+n_samples_valid: 256
+use_oracle: true
+n_pool: 500
+n_few_shot: 7
+k_pool: 50
+ratio: 0.8
+num_template: [8, 2]
+
+TFBind8-Exact-v0:
+  short_name: tf8
+  full_name: TFBind8-Exact-v0
+
+TFBind10-Exact-v0:
+  short_name: tf10
+  full_name: TFBind10-Exact-v0
+
+AntMorphology-Exact-v0:
+  short_name: ant
+  full_name: AntMorphology-Exact-v0
+
+DKittyMorphology-Exact-v0:
+  short_name: dkitty
+  full_name: DKittyMorphology-Exact-v0

@@ -1,0 +1,18 @@
+{
+  "TFBind8-Exact-v0": [
+    0.0,
+    1.0
+  ],
+  "TFBind10-Exact-v0": [
+    -1.36358516,
+    1.35324279
+  ],
+  "AntMorphology-Exact-v0": [
+    -386.90036,
+    590.24445
+  ],
+  "DKittyMorphology-Exact-v0": [
+    -880.4585,
+    340.90985
+  ]
+}
