@@ -191,6 +191,7 @@ def render_model_card(manifest: Dict[str, Any], *, release_tag: str) -> str:
     )
     return f'''---
 library_name: transformers
+pipeline_tag: other
 base_model: {manifest["base_model"]}
 base_model_relation: finetune
 license: mit
