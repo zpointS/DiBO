@@ -111,8 +111,9 @@ python -m pip check
 Training reads the included task bundles instead of initializing Design-Bench
 for every run. These model-ready caches preserve the filtering, score alignment,
 sorting, and normalization needed by the training pipeline, which avoids
-repeating the slower benchmark loading and preprocessing steps. The complete
-Design-Bench data cache is not required for training.
+repeating the slower benchmark loading and preprocessing steps. The
+Design-Bench data cache used for the released experiments is not required for
+training.
 
 TFBind10 evaluation uses the included exhaustive lookup. TFBind8, Ant, and
 D'Kitty evaluation additionally require the Design-Bench oracle dependencies

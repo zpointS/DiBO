@@ -169,7 +169,7 @@ The script validates the archive and installs its files into the
 `design_bench_data` directory used by Design-Bench. The optional `--target`
 argument is intended for staging or inspection, not automatic oracle discovery.
 See [`../data/README.md`](../data/README.md) for the distinction between this
-complete cache and the preprocessed task bundles.
+released-experiment cache and the preprocessed task bundles.
 
 Verify the Python and simulator layers:
 

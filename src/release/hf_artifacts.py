@@ -200,7 +200,6 @@ tags:
   - black-box-optimization
   - offline-black-box-optimization
   - design-bench
-  - reinforcement-learning
   - dibo
 ---
 
