@@ -191,7 +191,7 @@ def render_model_card(manifest: Dict[str, Any], *, release_tag: str) -> str:
     )
     return f'''---
 library_name: transformers
-pipeline_tag: other
+pipeline_tag: reinforcement-learning
 base_model: {manifest["base_model"]}
 base_model_relation: finetune
 license: mit
@@ -199,6 +199,7 @@ tags:
   - llada
   - llm
   - diffusion-language-model
+  - reinforcement-learning
   - black-box-optimization
   - offline-black-box-optimization
   - design-bench
