@@ -197,6 +197,7 @@ base_model_relation: finetune
 license: mit
 tags:
   - llada
+  - llm
   - diffusion-language-model
   - black-box-optimization
   - offline-black-box-optimization

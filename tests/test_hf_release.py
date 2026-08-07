@@ -202,6 +202,7 @@ class HFReleaseTest(unittest.TestCase):
         self.assertIn("dibo_tfbind8_final.pt", card)
         self.assertIn("four DiBO delimiter tokens", card)
         self.assertIn("pipeline_tag: other", card)
+        self.assertIn("  - llm", card)
         self.assertIn("hf_hub_download", card)
         self.assertIn("[DiBO repository](https://github.com/zpointS/DiBO)", card)
         self.assertNotIn("blob/main/docs/installation.md", card)
