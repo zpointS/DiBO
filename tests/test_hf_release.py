@@ -201,6 +201,7 @@ class HFReleaseTest(unittest.TestCase):
         self.assertIn("AutoModel.from_pretrained", card)
         self.assertIn("dibo_tfbind8_final.pt", card)
         self.assertIn("four DiBO delimiter tokens", card)
+        self.assertIn("does not call `apply_chat_template`", card)
         self.assertIn("pipeline_tag: reinforcement-learning", card)
         self.assertIn("  - llm", card)
         self.assertIn("  - reinforcement-learning", card)

@@ -257,6 +257,11 @@ model.eval()
 The packaged tokenizer already includes the four DiBO delimiter tokens. Do not
 add them or resize embeddings again after loading this export.
 
+The tokenizer configuration retains LLaDA's `chat_template` metadata, but DiBO
+does not call `apply_chat_template` during training or evaluation. DiBO directly
+tokenizes its rendered unified prompt-response corpus with the delimiter tokens
+above; do not insert chat headers when reproducing the released evaluation path.
+
 ## B. Download and load the original checkpoint
 
 The original artifact uses the released DiBO loader, which initializes the

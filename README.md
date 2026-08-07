@@ -57,6 +57,11 @@ DiBO extends the tokenizer with four special delimiter tokens:
 These tokens identify designs and labels within the unified prompt-response
 corpus. Training then proceeds in three stages:
 
+The tokenizer configuration retains LLaDA's `chat_template` metadata, but DiBO
+does not use `apply_chat_template` in training or evaluation. It directly
+tokenizes the rendered unified prompt-response corpus with the delimiter tokens
+above; do not insert chat headers when reproducing the released evaluation path.
+
 1. **Domain adaptation (DA)** jointly reconstructs masked prompt and response
    tokens to adapt the diffusion language model to heterogeneous BBO signals.
 2. **Supervised fine-tuning (SFT)** predicts masked response tokens and learns
