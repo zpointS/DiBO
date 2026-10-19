@@ -1,6 +1,7 @@
 # Training Diffusion Language Models for Black-Box Optimization
 
 <p align="center">
+  <a href="https://proceedings.mlr.press/v306/sun26g.html"><img src="https://img.shields.io/badge/PMLR-306%3A116501--116518-0077b6.svg" alt="PMLR proceedings"></a>
   <a href="https://arxiv.org/abs/2603.17919"><img src="https://img.shields.io/badge/arXiv-2603.17919-b31b1b.svg" alt="arXiv"></a>
   <a href="https://openreview.net/forum?id=Z7wI0sor6i"><img src="https://img.shields.io/badge/OpenReview-Z7wI0sor6i-8c1b13.svg?logo=openreview" alt="OpenReview"></a>
   <a href="https://icml.cc/virtual/2026/poster/63202"><img src="https://img.shields.io/badge/ICML_2026-Spotlight-4c8bf5.svg" alt="ICML 2026 Spotlight"></a>
@@ -8,7 +9,8 @@
   <a href="#license"><img src="https://img.shields.io/badge/Code_License-MIT-2ea44f.svg" alt="MIT code license"></a>
 </p>
 <p align="center">
-  <a href="assets/dibo-paper.pdf"><b>Paper</b></a> |
+  <a href="https://proceedings.mlr.press/v306/sun26g.html"><b>Paper</b></a> |
+  <a href="assets/dibo-paper.pdf"><b>Local PDF</b></a> |
   <a href="#poster"><b>Poster</b></a> |
   <a href="#training"><b>Training</b></a> |
   <a href="#evaluation"><b>Evaluation</b></a> |
@@ -39,6 +41,8 @@ adaptation (DA), supervised fine-tuning (SFT), and reinforcement learning
 
 ## News
 
+- **September 29, 2026:** Published in the
+  [ICML 2026 proceedings (PMLR 306:116501–116518)](https://proceedings.mlr.press/v306/sun26g.html).
 - **August 2026:** All DiBO code and artifacts are now publicly available on
   [GitHub](https://github.com/zpointS/DiBO) and
   [Hugging Face](https://huggingface.co/papers/2603.17919).
@@ -350,16 +354,28 @@ eval.py                  one-forward candidate evaluation
 
 ## Citation
 
-If you find this work helpful, please cite us:
+If you find this work helpful, please cite the published ICML 2026 paper:
 
 ```bibtex
-@article{sun2026training,
-  title={Training diffusion language models for black-box optimization},
-  author={Sun, Zipeng and Chen, Can and Yuan, Ye and Wu, Haolun and Gu, Jiayao and Pal, Christopher and Liu, Xue},
-  journal={arXiv preprint arXiv:2603.17919},
-  year={2026}
+@InProceedings{pmlr-v306-sun26g,
+  title = {Training Diffusion Language Models for Black-Box Optimization},
+  author = {Sun, Zipeng and Chen, Can and Yuan, Ye and Wu, Haolun and Gu, Jiayao and Pal, Christopher and Liu, Xue},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  pages = {116501--116518},
+  year = {2026},
+  editor = {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto},
+  volume = {306},
+  series = {Proceedings of Machine Learning Research},
+  month = {06--11 Jul},
+  publisher = {PMLR},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v306/main/assets/sun26g/sun26g.pdf},
+  url = {https://proceedings.mlr.press/v306/sun26g.html}
 }
 ```
+
+The [arXiv preprint](https://arxiv.org/abs/2603.17919) and
+[Hugging Face Papers page](https://huggingface.co/papers/2603.17919) remain
+available as alternative access points.
 
 This work builds upon
 [LLaDA](https://arxiv.org/abs/2502.09992) and

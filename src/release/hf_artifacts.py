@@ -209,8 +209,9 @@ tags:
 # {artifact_name}
 
 Final task-specific DiBO model for `{task}`, released with
-[Training Diffusion Language Models for Black-Box Optimization](https://arxiv.org/abs/2603.17919)
-(ICML 2026 Spotlight). See also the
+[Training Diffusion Language Models for Black-Box Optimization](https://proceedings.mlr.press/v306/sun26g.html)
+(ICML 2026 Spotlight; PMLR 306:116501–116518, 2026). See also the
+[arXiv preprint](https://arxiv.org/abs/2603.17919), the
 [Hugging Face paper page]({manifest["paper"]["url"]}) and the
 [DiBO code repository]({manifest["github_repository"]}).
 
@@ -327,14 +328,22 @@ does not reproduce the DA/SFT/RL training process.
 
 ## Citation
 
-If you find DiBO helpful, please cite:
+If you find DiBO helpful, please cite the published ICML 2026 paper:
 
 ```bibtex
-@article{{sun2026training,
-  title={{Training diffusion language models for black-box optimization}},
-  author={{Sun, Zipeng and Chen, Can and Yuan, Ye and Wu, Haolun and Gu, Jiayao and Pal, Christopher and Liu, Xue}},
-  journal={{arXiv preprint arXiv:2603.17919}},
-  year={{2026}}
+@InProceedings{{pmlr-v306-sun26g,
+  title = {{Training Diffusion Language Models for Black-Box Optimization}},
+  author = {{Sun, Zipeng and Chen, Can and Yuan, Ye and Wu, Haolun and Gu, Jiayao and Pal, Christopher and Liu, Xue}},
+  booktitle = {{Proceedings of the 43rd International Conference on Machine Learning}},
+  pages = {{116501--116518}},
+  year = {{2026}},
+  editor = {{Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto}},
+  volume = {{306}},
+  series = {{Proceedings of Machine Learning Research}},
+  month = {{06--11 Jul}},
+  publisher = {{PMLR}},
+  pdf = {{https://raw.githubusercontent.com/mlresearch/v306/main/assets/sun26g/sun26g.pdf}},
+  url = {{https://proceedings.mlr.press/v306/sun26g.html}}
 }}
 ```
 '''
