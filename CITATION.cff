@@ -20,7 +20,7 @@ authors:
 repository-code: "https://github.com/zpointS/DiBO"
 license: MIT
 preferred-citation:
-  type: article
+  type: conference-paper
   title: "Training Diffusion Language Models for Black-Box Optimization"
   authors:
     - family-names: Sun
@@ -37,7 +37,38 @@ preferred-citation:
       given-names: Christopher
     - family-names: Liu
       given-names: Xue
-  journal: "arXiv preprint arXiv:2603.17919"
+  collection-title: "Proceedings of the 43rd International Conference on Machine Learning"
+  collection-type: proceedings
+  conference:
+    name: "43rd International Conference on Machine Learning"
+  volume: 306
+  start: 116501
+  end: 116518
+  publisher:
+    name: PMLR
+  date-published: "2026-09-29"
   year: 2026
-  doi: "10.48550/arXiv.2603.17919"
-  url: "https://arxiv.org/abs/2603.17919"
+  url: "https://proceedings.mlr.press/v306/sun26g.html"
+references:
+  - type: article
+    title: "Training Diffusion Language Models for Black-Box Optimization"
+    authors:
+      - family-names: Sun
+        given-names: Zipeng
+      - family-names: Chen
+        given-names: Can
+      - family-names: Yuan
+        given-names: Ye
+      - family-names: Wu
+        given-names: Haolun
+      - family-names: Gu
+        given-names: Jiayao
+      - family-names: Pal
+        given-names: Christopher
+      - family-names: Liu
+        given-names: Xue
+    journal: "arXiv preprint arXiv:2603.17919"
+    status: preprint
+    year: 2026
+    doi: "10.48550/arXiv.2603.17919"
+    url: "https://arxiv.org/abs/2603.17919"
